@@ -1,0 +1,54 @@
+.main {
+	padding-top: 2rem;
+	form {
+		width: 50%;
+		margin-inline: auto;
+		div {
+			margin-block: 10px;
+			&.alert-error {
+				background-color: #e19d9d;
+				color: #800000;
+				padding-inline: 10px;
+				padding-block: 20px;
+			}
+
+			label {
+
+			}
+			input {
+				all: unset;
+				width: 100%;
+				padding-inline: 5px;
+				padding-block: 10px;
+				border-bottom: 1px solid #a3a3a3;
+				background-color: #efefef;
+			}
+			span {
+				color: red;
+			}
+
+			&.btn {
+				text-align: center;
+
+				button {
+					all: unset;
+					padding-block: 5px;
+					padding-inline: 10px;
+					background-color: #009f62;
+					color: white;
+					font-size: 1.2rem;
+					&:disabled {
+						opacity: 0.6;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	form {
+		width: 80% !important;
+		margin-inline: auto;
+	}
+}

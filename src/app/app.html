@@ -1,0 +1,29 @@
+<div class="main">
+	<form [formGroup]="loginForm" (ngSubmit)="login()">
+		@if(isInvalidLogin()) {
+		<div class="alert-error">
+			Usuario o contraseña incorrecto
+		</div>
+		}
+		<div>
+			<label>Nombre de Usuario</label>
+			<input type="text" name="username" formControlName="username">
+			@if(userNameIsInvalid) {
+			<span>Debe escribir el nombre de usuario</span>
+			}
+			
+		</div>
+		<div>
+			<label>Contraseña</label>
+			<input type="password" name="password" formControlName="password">
+			@if(passwordIsInvalid) {
+			<span>Debe escribir la contraseña</span>
+			}
+		</div>
+		<div class="btn">
+			<button [disabled]="sendingData() || loginForm.invalid">
+				Ingresar
+			</button>
+		</div>
+	</form>
+</div>
