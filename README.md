@@ -30,7 +30,10 @@ npm run test
 
 ## Usuario ingreso
 Usuario: emilys
+
 Contraseña: emilyspass
+
+
 
 La pagina se expone en `http://localhost:4202/` 
 
