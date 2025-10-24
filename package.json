@@ -50,6 +50,7 @@
     "ngx-build-plus": "^20.0.0",
     "serve": "^14.2.5",
     "typescript": "~5.9.2",
-    "vitest": "^3.2.4"
+    "vitest": "^3.2.4",
+    "zone.js": "^0.15.1"
   }
 }
